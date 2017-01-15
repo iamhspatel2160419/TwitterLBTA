@@ -15,6 +15,7 @@
 		C77E26B71E02478B00A3C0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77E26B61E02478B00A3C0E0 /* Assets.xcassets */; };
 		C77E26BA1E02478B00A3C0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77E26B81E02478B00A3C0E0 /* LaunchScreen.storyboard */; };
 		C77E26C21E02483A00A3C0E0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E26C11E02483A00A3C0E0 /* HomeController.swift */; };
+		C78BFE741E2B378C00E249DE /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BFE731E2B378C00E249DE /* HomeDatasourceController+navbar.swift */; };
 		C7AAFC731E24221A0066BE17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAFC721E24221A0066BE17 /* User.swift */; };
 		C7AAFC751E2425370066BE17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAFC741E2425370066BE17 /* UserCell.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		C77E26B91E02478B00A3C0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C77E26BB1E02478B00A3C0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C77E26C11E02483A00A3C0E0 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		C78BFE731E2B378C00E249DE /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
 		C7AAFC721E24221A0066BE17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7AAFC741E2425370066BE17 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				C70C44191E1869AE00A13374 /* HomeDatasourceController.swift */,
+				C78BFE731E2B378C00E249DE /* HomeDatasourceController+navbar.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C7AAFC731E24221A0066BE17 /* User.swift in Sources */,
 				C70C441F1E186D0800A13374 /* UserHeaderFooter.swift in Sources */,
 				C70C441A1E1869AE00A13374 /* HomeDatasourceController.swift in Sources */,
+				C78BFE741E2B378C00E249DE /* HomeDatasourceController+navbar.swift in Sources */,
 				C77E26C21E02483A00A3C0E0 /* HomeController.swift in Sources */,
 				C7AAFC751E2425370066BE17 /* UserCell.swift in Sources */,
 			);
