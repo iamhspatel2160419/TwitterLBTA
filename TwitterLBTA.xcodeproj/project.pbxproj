@@ -16,6 +16,7 @@
 		C77E26BA1E02478B00A3C0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77E26B81E02478B00A3C0E0 /* LaunchScreen.storyboard */; };
 		C77E26C21E02483A00A3C0E0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E26C11E02483A00A3C0E0 /* HomeController.swift */; };
 		C78BFE741E2B378C00E249DE /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BFE731E2B378C00E249DE /* HomeDatasourceController+navbar.swift */; };
+		C78BFEA71E2F379200E249DE /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BFEA61E2F379200E249DE /* TweetCell.swift */; };
 		C7AAFC731E24221A0066BE17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAFC721E24221A0066BE17 /* User.swift */; };
 		C7AAFC751E2425370066BE17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAFC741E2425370066BE17 /* UserCell.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		C77E26BB1E02478B00A3C0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C77E26C11E02483A00A3C0E0 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C78BFE731E2B378C00E249DE /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
+		C78BFEA61E2F379200E249DE /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		C7AAFC721E24221A0066BE17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7AAFC741E2425370066BE17 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				C70C441E1E186D0800A13374 /* UserHeaderFooter.swift */,
 				C7AAFC741E2425370066BE17 /* UserCell.swift */,
+				C78BFEA61E2F379200E249DE /* TweetCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				C70C44211E186D1E00A13374 /* HomeDatasource.swift in Sources */,
 				C77E26B01E02478B00A3C0E0 /* AppDelegate.swift in Sources */,
 				C7AAFC731E24221A0066BE17 /* User.swift in Sources */,
+				C78BFEA71E2F379200E249DE /* TweetCell.swift in Sources */,
 				C70C441F1E186D0800A13374 /* UserHeaderFooter.swift in Sources */,
 				C70C441A1E1869AE00A13374 /* HomeDatasourceController.swift in Sources */,
 				C78BFE741E2B378C00E249DE /* HomeDatasourceController+navbar.swift in Sources */,
