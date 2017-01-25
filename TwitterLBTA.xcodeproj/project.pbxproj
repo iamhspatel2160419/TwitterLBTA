@@ -11,6 +11,7 @@
 		C70C441A1E1869AE00A13374 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C44191E1869AE00A13374 /* HomeDatasourceController.swift */; };
 		C70C441F1E186D0800A13374 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C441E1E186D0800A13374 /* UserHeaderFooter.swift */; };
 		C70C44211E186D1E00A13374 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C44201E186D1E00A13374 /* HomeDatasource.swift */; };
+		C716E5221E3869ED00066B38 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716E5211E3869ED00066B38 /* Tweet.swift */; };
 		C77E26B01E02478B00A3C0E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77E26AF1E02478B00A3C0E0 /* AppDelegate.swift */; };
 		C77E26B71E02478B00A3C0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77E26B61E02478B00A3C0E0 /* Assets.xcassets */; };
 		C77E26BA1E02478B00A3C0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77E26B81E02478B00A3C0E0 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 		C70C44191E1869AE00A13374 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		C70C441E1E186D0800A13374 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		C70C44201E186D1E00A13374 /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		C716E5211E3869ED00066B38 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		C77E26AC1E02478B00A3C0E0 /* TwitterLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77E26AF1E02478B00A3C0E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77E26B61E02478B00A3C0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				C70C44201E186D1E00A13374 /* HomeDatasource.swift */,
 				C7AAFC721E24221A0066BE17 /* User.swift */,
+				C716E5211E3869ED00066B38 /* Tweet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70C44211E186D1E00A13374 /* HomeDatasource.swift in Sources */,
+				C716E5221E3869ED00066B38 /* Tweet.swift in Sources */,
 				C77E26B01E02478B00A3C0E0 /* AppDelegate.swift in Sources */,
 				C7AAFC731E24221A0066BE17 /* User.swift in Sources */,
 				C78BFEA71E2F379200E249DE /* TweetCell.swift in Sources */,
