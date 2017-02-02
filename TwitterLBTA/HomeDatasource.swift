@@ -7,18 +7,28 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
-class HomeDatasource: Datasource {
+class HomeDatasource: Datasource, JSONDecodable {
     
-    let users: [User] = {
-        let brianUser = User(name: "Brian Voong", username: "@buildthatapp", bioText: "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS apps!", profileImage: #imageLiteral(resourceName: "profile_image"))
+    let users: [User]
+    
+    required init(json: JSON) throws {
+        var users = [User]()
         
-        let rayUser = User(name: "Ray Wenderlich", username: "@rwenderlich", bioText: "Ray Wenderlich is an iPhone developer and tweets on topics related to iPhone, software, and gaming. Check out our conference.", profileImage: #imageLiteral(resourceName: "ray_profile_image"))
+        let array = json["users"].array
+        for userJson in array! {
+            let name = userJson["name"].stringValue
+            let username = userJson["username"].stringValue
+            let bio = userJson["bio"].stringValue
+            
+            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+            users.append(user)
+        }
         
-        let kindleCourseUser = User(name: "Kindle Course", username: "@kindleCourse", bioText: "This recently released course on https://videos.letsbuildthatapp.com/basic-training provides some excellent guidance on how to use UITableView and UICollectionView.  This course also teaches some basics on the Swift language, for example If Statements and For Loops.  This will be an excellent purchase for you.", profileImage: #imageLiteral(resourceName: "profile_image"))
-        
-        return [brianUser, rayUser, kindleCourseUser]
-    }()
+        self.users = users
+    }
     
     let tweets: [Tweet] = {
         let brianUser = User(name: "Brian Voong", username: "@buildthatapp", bioText: "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS apps!", profileImage: #imageLiteral(resourceName: "profile_image"))

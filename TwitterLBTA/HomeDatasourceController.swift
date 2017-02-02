@@ -7,6 +7,8 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
 class HomeDatasourceController: DatasourceController {
     
@@ -21,8 +23,62 @@ class HomeDatasourceController: DatasourceController {
         
         setupNavigationBarItems()
         
-        let homeDatasource = HomeDatasource()
-        self.datasource = homeDatasource
+//        let homeDatasource = HomeDatasource()
+//        self.datasource = homeDatasource
+        
+        fetchHomeFeed()
+    }
+    
+    let tron = TRON(baseURL: "https://api.letsbuildthatapp.com")
+    
+    class Home: JSONDecodable {
+        
+        let users: [User]
+        
+        required init(json: JSON) throws {
+            var users = [User]()
+            
+            let array = json["users"].array
+            for userJson in array! {
+                let name = userJson["name"].stringValue
+                let username = userJson["username"].stringValue
+                let bio = userJson["bio"].stringValue
+                
+                let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+                users.append(user)
+            }
+            
+            self.users = users
+        }
+        
+    }
+    
+    class JSONError: JSONDecodable {
+        required init(json: JSON) throws {
+            print("JSON ERROR")
+        }
+    }
+    
+    fileprivate func fetchHomeFeed() {
+        //start our json fetch
+        
+        let request: APIRequest<HomeDatasource, JSONError> = tron.request("/twitter/home")
+        
+        request.perform(withSuccess: { (homeDatasource) in
+            print("Successfully fetched our json objects")
+            
+            print(homeDatasource.users.count)
+            
+            self.datasource = homeDatasource
+            
+        }) { (err) in
+            print("Failed to fetch json...", err)
+        }
+        
+        //this is a lot of code, lets use tron instead
+//        URLSession.shared.dataTask(with: <#T##URL#>, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
+        
+//        print(123)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
